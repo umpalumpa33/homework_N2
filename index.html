@@ -8,18 +8,12 @@
         form {
             text-align: center;
             }
-        p {
-            margin-right: 9%;
-        }
-
-
     </style>
 </head>
 <body>
-    <form target="_blank" action="https://www.google.com/search">
-        <p>Enter your query:</p>
-        <input type="text" id="search-query" name="search_input">
-        <input type="submit" value="Google Search">
-      </form>      
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" placeholder="Enter your search query..." required>
+        <button type="submit">Search Google</button>
+      </form>
 </body>
 </html>
