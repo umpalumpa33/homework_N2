@@ -23,88 +23,80 @@
         #bolo_tr {
             text-align: left;
         }
+
+        #reset {
+            margin-left: 5px;
+        }
     </style>
 </head>
 <body>
     <table>
-        <tr>
-            <th>Control Type</th>
-            <th>Data</th>
-            <th>Control</th>
-        </tr>
-        <tr>
-            <form>
-                <td><label for="textbox">Text Box</label></td>
-                <td><label for="name">Name:</label></td>
-                <td><input type="text" name="fname" placeholder="Enter name"></td>
-            </form>
-        </tr>
-        <tr>
-            <form>
-                <td><label for="psw_text">Password</label></td>
-                <td><label for="password:">Password:</label></td>
-                <td><input type="password" name="passwordtext"></td>
-            </form>
-        </tr>
-        <tr>
-            <form>
-                <td><label for="text_area_txt">Text area</label></td>
-                <td><label for="address_text">Address:</label></td>
-                <td><textarea name="txt_area" placeholder="Enter Address" cols="21" rows="3"></textarea></td>
-            </form>
-        </tr>
-        <tr>
-            <form>
-                <td><label for="drop_down_list">Drop down list</label></td>
-                <td><label for="area_txt">Area:</label></td>
-                <td>
-                    <select name="dropdownlist">
-                        <option value="center">Center</option>
-                        <option value="north">North</option>
-                        <option value="south">South</option>
-                        <option value="east">East</option>
-                        <option value="west">West</option>
-                    </select>
-                </td>
-            </form>
-        </tr>
-        <tr>
-            <form>
-                <td><label for="check_box">Check box</label></td>
-                <td><label for="hobbies">Hobbies:</label></td>
-                <td>
-                    <input type="checkbox" name="sport"> Sport <br />
-                    <input type="checkbox" name="reading"> Reading <br />
-                    <input type="checkbox" name="tv"> T.V. <br />
-                    <input type="checkbox" name="internet"> Internet
-                </td>
-            </form> 
-        </tr>
-        <tr>
-            <form>
-                <td><label for="radio_btns">Radio Buttons</label></td>
-                <td><label for="gender">Gender: </label></td>
-                <td>
-                    <fieldset>
-                        <Legend>Gender Selection</Legend>
-                        <input type="checkbox" name="male">Male <br />
-                        <input type="checkbox" name="female">Female <br />
-                    </fieldset>
-                </td>
-            </form>
-        </tr>
-        <tr>
-            <form>
-                <td><label for="file_upload">File upload</label></td>
-                <td><label for="image">Your image:</label></td>
-                <td><input type="file" id="myFile" name="filename"></td>
-                </tr>
-            </form>
-        <tr id="bolo_tr">
-            <form action="index1.html">
-                <td><label for="buttons">Buttons</label></td>
-                <td><label for="action">Acitons:</label></td>
-                <td><button>Submit</button><button>Reset</button><button>Button</button></td>
+        <form action="/action_page.php">
+            <tr>
+                <th>Control Type</th>
+                <th>Data</th>
+                <th>Control</th>
+            </tr>
+            <tr>
+                
+                    <td><label for="textbox">Text Box</label></td>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" name="fname" placeholder="Enter name"></td>
+            </tr>
+            <tr>
+                    <td><label for="psw_text">Password</label></td>
+                    <td><label for="password:">Password:</label></td>
+                    <td><input type="password" name="passwordtext"></td>
+            </tr>
+            <tr>
+                    <td><label for="text_area_txt">Text area</label></td>
+                    <td><label for="address_text">Address:</label></td>
+                    <td><textarea name="txt_area" placeholder="Enter Address" cols="21" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                    <td><label for="drop_down_list">Drop down list</label></td>
+                    <td><label for="area_txt">Area:</label></td>
+                    <td>
+                        <select name="dropdownlist">
+                            <option value="center">Center</option>
+                            <option value="north">North</option>
+                            <option value="south">South</option>
+                            <option value="east">East</option>
+                            <option value="west">West</option>
+                        </select>
+                    </td>
+            </tr>
+            <tr>
+                    <td><label for="check_box">Check box</label></td>
+                    <td><label for="hobbies">Hobbies:</label></td>
+                    <td>
+                        <input type="checkbox" name="sport"> Sport <br />
+                        <input type="checkbox" name="reading"> Reading <br />
+                        <input type="checkbox" name="tv"> T.V. <br />
+                        <input type="checkbox" name="internet"> Internet
+                    </td> 
+            </tr>
+            <tr>
+                    <td><label for="radio_btns">Radio Buttons</label></td>
+                    <td><label for="gender">Gender: </label></td>
+                    <td>
+                        <fieldset>
+                            <Legend>Gender Selection</Legend>
+                            <input type="checkbox" name="male">Male <br />
+                            <input type="checkbox" name="female">Female <br />
+                        </fieldset>
+                    </td>
+            </tr>
+            <tr>
+                    <td><label for="file_upload">File upload</label></td>
+                    <td><label for="image">Your image:</label></td>
+                    <td><input type="file" id="myFile" name="filename"></td>
+                    </tr>
+            <tr id="bolo_tr">
+                <form action="index1.html">
+                    <td><label for="buttons">Buttons</label></td>
+                    <td><label for="action">Acitons:</label></td>
+                    <td><input type="submit" name="submit"><input type="reset" name="reset" id="reset"><button>Button</button></td>
             </form>
         </tr>
     </table>
